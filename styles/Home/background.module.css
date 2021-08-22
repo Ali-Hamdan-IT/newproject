@@ -1,0 +1,95 @@
+.backgroundHeader {
+  width: 100%;
+  height: 400px;
+  color: white;
+  position: relative;
+}
+.backgroundHeader::before {
+  content: "";
+  background-image: url("/background.jpg");
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background-size: cover;
+  background-attachment: fixed;
+  filter: brightness(60%);
+  z-index: -1;
+}
+.h1 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 30%;
+  word-spacing: 10px;
+  font-size: 25px;
+  font-weight: 300;
+  letter-spacing: 8px;
+  width: fit-content;
+}
+@media (min-width: 500px) {
+  .h1 {
+    font-size: 40px;
+    letter-spacing: 15px;
+  }
+}
+@media (min-width: 700px) {
+  .h1 {
+    font-size: 60px;
+    letter-spacing: 17px;
+  }
+}
+.p {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 46%;
+  word-spacing: 1px;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 1px;
+  width: fit-content;
+}
+@media (min-width: 500px) {
+  .p {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+}
+@media (min-width: 700px) {
+  .p {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+}
+.button {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 60%;
+  font-weight: 600;
+  padding: 4px;
+}
+.topics {
+  width: 80%;
+  /* -webkit-transform: translate(-50%, 78%); */
+  -moz-transform: translate(-50%, 78%);
+  /* transform: translate(-50%, 78%); */
+  margin-top: -10%;
+  margin-bottom: 70px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  position: relative;
+  /* margin: auto; */
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 600px) {
+  .topics {
+    width: 95%;
+    bottom: 16%;
+  }
+}

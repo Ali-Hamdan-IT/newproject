@@ -1,0 +1,98 @@
+.classHead {
+  position: relative;
+  margin-bottom: 10px;
+  height: 400px;
+}
+.image {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  filter: brightness(70%);
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.button {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 40%;
+}
+.bread {
+  margin-left: 10vh;
+  margin-bottom: 25px;
+}
+.headTilte {
+  font-size: 36px;
+  color: white;
+  word-spacing: 1.2px;
+  font-weight: 700;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 18%;
+}
+.cardContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 10px 10px;
+  flex-wrap: wrap;
+  background-color: #f5f5f5;
+  padding: 25px;
+}
+.h2,
+.coach {
+  margin: 0px;
+  font-weight: 700;
+  text-align: left;
+  letter-spacing: 1.4px;
+  margin-bottom: 20px;
+  word-break: break-word;
+}
+.coach {
+  text-align: center;
+}
+.h4 {
+  margin: 0px;
+  display: inline-block;
+  word-break: break-word;
+}
+.p {
+  display: inline-block;
+  margin-left: 25px;
+  font-size: 16px;
+  word-break: break-word;
+  text-align: left;
+  line-height: 1.6;
+}
+.coachName {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+}
+.img {
+  border-radius: 50%;
+}
+.span {
+  font-size: 15px;
+  color: gray;
+  font-family: monospace;
+  text-align: center;
+}
+.button {
+  position: absolute;
+  top: 66%;
+}
+.badgeIcon {
+  position: absolute !important;
+  right: 10px !important;
+
+  color: #ffae00 !important;
+}
+.badge {
+  width: 40px !important;
+  height: 30px !important;
+}

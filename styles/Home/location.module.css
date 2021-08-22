@@ -1,0 +1,36 @@
+.options {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 5px 5px;
+  padding: 10px;
+}
+.optionContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+.h1 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 32px;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  color: white;
+}
+.h3 {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0px;
+  line-height: 3;
+  color: white;
+  letter-spacing: 3px;
+}
+.p {
+  font-weight: 400;
+  margin: 0px;
+  margin-top: 20px;
+  color: white;
+}

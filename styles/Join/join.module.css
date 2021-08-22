@@ -1,0 +1,74 @@
+.form {
+  padding: 20px;
+  display: grid;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  /* flex-direction: column; */
+  -moz-box-pack: space-evenly;
+  /* justify-content: space-evenly; */
+  -moz-box-align: start;
+  align-items: center;
+  gap: 29px 20px;
+  grid-template-columns: 30% 70%;
+  height: 65vh;
+}
+.label {
+  font-size: 18px;
+  font-weight: 600;
+}
+@media (min-width: 500px) {
+  .label {
+    font-size: 20px;
+  }
+}
+@media (min-width: 720px) {
+  .label {
+    font-size: 22px;
+  }
+}
+@media (min-width: 970px) {
+  .label {
+    font-size: 24px;
+  }
+}
+.input {
+  font-size: 24px;
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 3px 3px;
+}
+@media (min-width: 500px) {
+  .input {
+    width: 300px;
+  }
+}
+@media (min-width: 720px) {
+  .input {
+    width: 400px;
+  }
+}
+@media (min-width: 970px) {
+  .input {
+    width: 500px;
+  }
+}
+.select {
+  font-size: 18px;
+  width: 60px;
+  border-radius: 5px;
+  box-shadow: 3px 3px;
+}
+@media (min-width: 500px) {
+  .select {
+    font-size: 20px;
+  }
+}
+@media (min-width: 970px) {
+  .select {
+    font-size: 24px;
+  }
+}
+.button {
+  grid-column: 2/3;
+  width: 100px;
+}

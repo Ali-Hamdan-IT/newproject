@@ -5,12 +5,55 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+* {
+  box-sizing: border-box;
+}
 
 a {
   color: inherit;
   text-decoration: none;
 }
-
-* {
-  box-sizing: border-box;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.visited {
+  color: orange;
+}
+.headerLink {
+  font-size: 17px;
+  text-align: center;
+}
+.signButton {
+  color: #fff;
+  background-color: inherit;
+  border: 1px solid #ff970d;
+  border-radius: 24px;
+  font-size: 12px;
+  padding: 5px;
+}
+.signButton:hover {
+  background-color: #ff970da3;
+  cursor: pointer;
+}
+/*small*/
+@media (min-width: 500px) {
+  .signButton {
+    padding: 7px 17px;
+    font-size: 14px;
+  }
+}
+/*medium*/
+@media (min-width: 992px) {
+  .signButton {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+/*large*/
+@media (min-width: 1200px) {
+  .signButton {
+    padding: 12px 24px;
+    font-size: 18px;
+  }
 }

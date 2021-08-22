@@ -1,0 +1,32 @@
+.icon {
+  font-size: 40px;
+  color: #f6f9be;
+  padding: 8px;
+  cursor: pointer;
+}
+.h1 {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  margin: 0px;
+  text-align: center;
+}
+.p {
+  font-size: 12px;
+  font-weight: 200;
+  letter-spacing: 1.3px;
+  text-align: center;
+  color: white;
+  margin: 0px;
+  margin-top: 2px;
+}
+.span {
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.footerIcons {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
