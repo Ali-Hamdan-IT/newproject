@@ -15,10 +15,11 @@ import { Typography } from "@material-ui/core";
 import { Rating } from "@material-ui/lab";
 import Box from "@material-ui/core/Box";
 import { useRouter } from "next/router";
+import { posts } from "../database/posts.js";
 
-function Community({ posts }) {
+function Community({ postsdata }) {
   const Router = useRouter();
-  const [Posts, setPosts] = useState(posts);
+  const [Posts, setPosts] = useState(postsdata);
   const [postValue, setPostValue] = useState("");
   const [postTitle, setPostTilte] = useState("");
   const [postTopic, setPostTopic] = useState("BodyBuilding");
@@ -278,9 +279,8 @@ function Community({ posts }) {
 export default Community;
 
 export async function getServerSideProps() {
-  const response = await fetch("http://localhost:3000/api/posts");
-  const data = await response.json();
+  const data = posts;
   return {
-    props: { posts: data.reverse() },
+    props: { postsdata: data.reverse() },
   };
 }
